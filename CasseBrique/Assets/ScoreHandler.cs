@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class ScoreHandler : MonoBehaviour
 {
-    private int pointPlayer1 = 0;
+    private int score = 0;
 
     [SerializeField] private GameObject textScore;
 
-    public void IncrementPlayer1Score()
+    public void IncrementScore()
     {
-        pointPlayer1++;
-        Debug.Log("Player 1 score:" + pointPlayer1);
+        score++;
+        Debug.Log("Score:" + score);
         RefreshScore();
     }
 
     public void RefreshScore()
     {
-        textScore.GetComponent<TextMeshProUGUI>().text = "Score: " + pointPlayer1;
+        textScore.GetComponent<TextMeshProUGUI>().text = "Score: " + score;
     }
 }

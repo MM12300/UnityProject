@@ -7,9 +7,6 @@ public class OnCollisionScore : MonoBehaviour
     
     private GameObject ScoreHandler;
 
-    [SerializeField]
-    private bool player1Goal;
-
     void Start()
     {
         ScoreHandler  = GameObject.Find("ScoreHandler");
@@ -18,8 +15,8 @@ public class OnCollisionScore : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(player1Goal){
-            ScoreHandler.GetComponent<ScoreHandler>().IncrementPlayer1Score();
-        }
+        
+            ScoreHandler.GetComponent<ScoreHandler>().IncrementScore();
+        
     }
 }
