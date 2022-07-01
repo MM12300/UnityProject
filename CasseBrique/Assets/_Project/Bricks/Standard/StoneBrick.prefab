@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3612614795097833472}
   - component: {fileID: 3321726507830640851}
   - component: {fileID: -5894349968959382642}
+  - component: {fileID: 1569440405976729052}
   m_Layer: 0
   m_Name: StoneBrick
   m_TagString: Untagged
@@ -114,3 +115,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!114 &1569440405976729052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219910146207397420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf9d6205d29f49428dc18743df8e00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
