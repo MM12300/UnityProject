@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class BrickCollisionChecker : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider col)
+    private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
-        //SceneManager.LoadScene("SampleScene");
     }
 }
 
