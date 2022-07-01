@@ -35,18 +35,5 @@ public class PlateformMove : MonoBehaviour
         }
         
 
-        var position = transform.position;
-
-        if (position.y > 5f)
-        {
-            position.y = 5f;
-        }
-
-        if (position.y < -4f)
-        {
-            position.y = -4f;
-        }
-
-        transform.position = position;
     }
 }

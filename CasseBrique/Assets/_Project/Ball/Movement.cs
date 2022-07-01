@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            this.gameObject.GetComponent<Rigidbody>().AddForce(Vector2.right * Time.deltaTime * speed);
+            this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * speed);
         }
     }
 }
