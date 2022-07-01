@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -246,7 +246,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5205715429727448947, guid: 661f744c5aed4aabaa0b0b36ea7f6787, type: 3}
       propertyPath: speed
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2647695101327490033, guid: 661f744c5aed4aabaa0b0b36ea7f6787, type: 3}
       propertyPath: m_RootOrder
@@ -476,6 +476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3487597644868954188, guid: e2ed651e9fab4a03bab04bb9d11778c5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5032909524924092060, guid: e2ed651e9fab4a03bab04bb9d11778c5, type: 3}
       propertyPath: m_Name
       value: Long Border (3)
@@ -769,6 +773,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &937025429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5032909524924092060, guid: e2ed651e9fab4a03bab04bb9d11778c5, type: 3}
+  m_PrefabInstance: {fileID: 566217293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937025434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937025429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bb58768b406144ba88d90db0024562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1167320264
 PrefabInstance:
   m_ObjectHideFlags: 0
