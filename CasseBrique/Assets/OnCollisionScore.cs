@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnCollisionScore : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class OnCollisionScore : MonoBehaviour
         } else
         {
             ScoreHandler.GetComponent<ScoreHandler>().IncrementScore();
+        }
+        if (ScoreHandler.GetComponent<ScoreHandler>().Winner())
+        {
+            SceneManager.LoadScene("VictoryScene");
         }
     }
 }

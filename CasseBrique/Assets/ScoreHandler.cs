@@ -27,4 +27,15 @@ public class ScoreHandler : MonoBehaviour
     {
         textScore.GetComponent<TextMeshProUGUI>().text = "Score: " + score;
     }
+    public bool Winner()
+    {
+        bool winner = false;
+
+        if (score == 20)
+        {
+            winner = true;
+        }
+
+        return winner;
+    }
 }
