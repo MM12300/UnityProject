@@ -16,6 +16,13 @@ public class ScoreHandler : MonoBehaviour
         RefreshScore();
     }
 
+    public void IncrementScoreBonus()
+    {
+        score += 2;
+        Debug.Log("Score:" + score);
+        RefreshScore();
+    }
+
     public void RefreshScore()
     {
         textScore.GetComponent<TextMeshProUGUI>().text = "Score: " + score;

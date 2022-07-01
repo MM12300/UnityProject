@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OnCollisionScore : MonoBehaviour
 {
-    
+    [SerializeField] private bool bonus;
+
     private GameObject ScoreHandler;
 
     void Start()
@@ -15,8 +16,13 @@ public class OnCollisionScore : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (bonus)
+        {
+            ScoreHandler.GetComponent<ScoreHandler>().IncrementScoreBonus();
+
+        } else
+        {
             ScoreHandler.GetComponent<ScoreHandler>().IncrementScore();
-        
+        }
     }
 }
